@@ -238,7 +238,7 @@ def redraw_pieces():
                 temp = 7-abs(board[i][j])
             else:
                 continue
-            image = pygame.image.load(os.getcwd()+r'\sprites\chess_pieces ('+str(temp)+').png')
+            image = pygame.image.load(os.path.join(os.getcwd(),'Chess', 'sprites', 'chess_pieces ('+str(temp)+').png'))
             win.blit(image, (j*60+20, i*60+20))
     pygame.display.flip()
 

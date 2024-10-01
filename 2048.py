@@ -147,7 +147,6 @@ for i in range(18):
     break
     if new_tile() == False:
         break
-print_board()
 
 something_happened = True
 run = True
@@ -162,7 +161,6 @@ while run:
     if something_happened == True:
         if new_tile() == False:
             done = True
-        print_board()
     something_happened = False
 
     for event in pygame.event.get():

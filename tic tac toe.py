@@ -1,6 +1,8 @@
 import pygame
 import time
 
+# For kontekst er dette mitt første programmeringsprosjekt noensinne, ikke døm for hardt
+
 pygame.init()
 
 black = (0, 0, 0)

@@ -33,7 +33,6 @@ def place(col):
                 board[i-1][col] = 2
                 draw_circle(col*100+50,(i-1)*100+50,red)
                 win_red = win_cond(col,i-1,turn)
-                print(win_red)
                 turn = 'Yellow'
                 break
         elif i == 5:
@@ -96,9 +95,7 @@ def win_cond(x,y,color):
         try:
             diagonal_list.append(board[diagonal_start[0]+i][diagonal_start[1]+i])
         except:
-            print('you\'ve met the edge')
-    print('diagonal 1')
-    print(diagonal_list)
+            pass
 
     if len(diagonal_list)>3:
         for i in range(len(diagonal_list)-3):
@@ -127,8 +124,7 @@ def win_cond(x,y,color):
             diagonal_list.append(board[diagonal_start[0]+i][diagonal_start[1]-i])
         except:
             pass
-    print('diagonal 2')
-    print(diagonal_list)
+
     if len(diagonal_list)>3:
         for i in range(len(diagonal_list)-3):
             if turn == 'Yellow':

@@ -284,7 +284,6 @@ game_width = 800
 show_board = False
 
 win = pygame.display.set_mode((width*show_board+game_width,height))
-superShotgun = pygame.image.load('super shotgun animations.png')
 
 pygame.display.set_caption("Raycasting engine")
 
@@ -664,6 +663,6 @@ while run:
     player_dir = fix_dir(player_dir)
 
     draw_board()
-    print(clock.tick(60))
+    clock.tick(60)
 
 pygame.quit()
